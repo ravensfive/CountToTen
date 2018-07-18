@@ -1,0 +1,144 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "count to ten",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "Cancel",
+                        "Stop"
+                    ]
+                },
+                {
+                    "name": "CountToTen",
+                    "slots": [
+                        {
+                            "name": "language",
+                            "type": "language"
+                        }
+                    ],
+                    "samples": [
+                        "{language}",
+                        "count to ten in {language}",
+                        "can you count to ten in {language}"
+                    ]
+                },
+                {
+                    "name": "GetNumber",
+                    "slots": [
+                        {
+                            "name": "number",
+                            "type": "number"
+                        },
+                        {
+                            "name": "language",
+                            "type": "language"
+                        }
+                    ],
+                    "samples": [
+                        "in {language} number {number}",
+                        "can you tell me what number {number} is in {language}",
+                        "{number} in {language}",
+                        "what is number {number} in {language}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "language",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "spanish"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "italian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "french"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "english"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "german"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "number",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "ten"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eight"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "seven"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "six"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "five"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "four"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "three"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "two"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "one"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

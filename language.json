@@ -1,0 +1,70 @@
+{
+            "languages" :   [
+                {
+                "english" : [
+                {
+                    "1": [{"value" : "one","phonetic" : "wʌn"}],
+                    "2": [{"value" : "two","phonetic" : "tuː"}],
+                    "3": [{"value" : "three","phonetic" : "θriː"}],
+                    "4": [{"value" : "four","phonetic" : "fɔː"}],
+                    "5": [{"value" : "five","phonetic" : "fʌɪv"}],
+                    "6": [{"value" : "six","phonetic" : "sɪks"}],
+                    "7": [{"value" : "seven","phonetic" : "ˈsɛv(ə)n"}],
+                    "8": [{"value" : "eight","phonetic" : "eɪt"}],
+                    "9": [{"value" : "nine","phonetic" : "nʌɪn"}],
+                    "10": [{"value" : "ten","phonetic" : "tɛn"}]
+                }],
+                "german" : [ 
+                {
+                    "1": [{"value" : "eins","phonetic" : "aɪ̯ns"}],
+                    "2": [{"value" : "zwei","phonetic" : "t͡svaɪ̯"}],
+                    "3": [{"value" : "drei","phonetic" : "dʁaɪ̯"}],
+                    "4": [{"value" : "vier","phonetic" : "fiːɐ̯"}],
+                    "5": [{"value" : "funf","phonetic" : "fʏnf"}],
+                    "6": [{"value" : "sechs","phonetic" : "zɛks"}],
+                    "7": [{"value" : "sieben","phonetic" : "ˈziːbm̩"}],
+                    "8": [{"value" : "acht","phonetic" : "aχt"}],
+                    "9": [{"value" : "neun","phonetic" : "nɔʏ̯n"}],
+                    "10": [{"value" : "zehn","phonetic" : "tseːn"}]
+                }],
+                "spanish" : [ 
+                {
+                    "1": [{"value" : "uno","phonetic" : "ˈuno"}],
+                    "2": [{"value" : "dos","phonetic" : "dos"}],
+                    "3": [{"value" : "tres","phonetic" : "tɾes"}],
+                    "4": [{"value" : "cuatro","phonetic" : "ˈkwatɾo"}],
+                    "5": [{"value" : "cinco","phonetic" : "ˈθinko"}],
+                    "6": [{"value" : "seis","phonetic" : "seis"}],
+                    "7": [{"value" : "siete","phonetic" : "ˈsjete"}],
+                    "8": [{"value" : "ocho","phonetic" : "ˈot͡ʃo"}],
+                    "9": [{"value" : "nueve","phonetic" : "ˈnwebe"}],
+                    "10": [{"value" : "diez","phonetic" : "ˈdjeθ"}]
+                }],
+                "french" : [ 
+                {
+                    "1": [{"value" : "un","phonetic" : "œ̃"}],
+                    "2": [{"value" : "deux","phonetic" : "dø"}],
+                    "3": [{"value" : "trois","phonetic" : "tʁwɑ"}],
+                    "4": [{"value" : "quatre","phonetic" : "katʁ"}],
+                    "5": [{"value" : "cinq","phonetic" : "sɛ̃k"}],
+                    "6": [{"value" : "six","phonetic" : "sis"}],
+                    "7": [{"value" : "sept","phonetic" : "sɛt"}],
+                    "8": [{"value" : "huit","phonetic" : "ɥit"}],
+                    "9": [{"value" : "neuf","phonetic" : "nœ.v‿"}],
+                    "10": [{"value" : "dix","phonetic" : "di.z‿"}]
+                }],
+                "italian" : [ 
+                {
+                    "1": [{"value" : "uno","phonetic" : "ˈuno"}],
+                    "2": [{"value" : "due","phonetic" : "ˈdu.e"}],
+                    "3": [{"value" : "tre","phonetic" : "tre"}],
+                    "4": [{"value" : "quattro","phonetic" : "ˈkwatːro"}],
+                    "5": [{"value" : "cinque","phonetic" : "ˈt͡ʃin.kwe"}],
+                    "6": [{"value" : "sei","phonetic" : "ˈsɛi"}],
+                    "7": [{"value" : "sette","phonetic" : "ˈsɛtːe"}],
+                    "8": [{"value" : "otto","phonetic" : "ɔtːo"}],
+                    "9": [{"value" : "nove","phonetic" : "ˈnɔve"}],
+                    "10": [{"value" : "dieci","phonetic" : "ˈdjɛt͡ʃi"}]
+                }]
+                }]
+}
