@@ -80,17 +80,17 @@ def count_to_ten(intent):
     # test if bean exists in json
     if 'language' in intent['slots']:
         
-        # extract slot value
-        chosen_language = intent['slots']['language']['value']
-        
-        if chosen_language != "" :
-            chosen_language = str(intent['slots']['language']['value']).lower()
-            # set card title - appears on the show and spot
-            card_title = "Count to ten : " + chosen_language.title()
-            # set up temporary speech output
-            speech_output = "Ok, counting to ten in "+ chosen_language.title() + ", get ready to repeat after me "
-            # try and load language from json file, looping to build one to ten string
-            try:
+        try:
+            # extract slot value
+            chosen_language = intent['slots']['language']['value']
+            
+            if chosen_language != "" :
+                chosen_language = str(intent['slots']['language']['value']).lower()
+                # set card title - appears on the show and spot
+                card_title = "Count to ten : " + chosen_language.title()
+                # set up temporary speech output
+                speech_output = "Ok, counting to ten in "+ chosen_language.title() + ", get ready to repeat after me "
+                # try and load language from json file, looping to build one to ten string
                 for n in range(0,10):
                     
                     # extract value and phonetics ready to build string
@@ -102,12 +102,11 @@ def count_to_ten(intent):
 
                     if n == 9 :
                         speech_output = speech_output + ", I think you did great, what language would you like now?"
-            
-            # if language doesn't match then load default error response
-            except:
-                card_title = "I'm sorry"
-                speech_output = "I'm sorry, I'm not sure I have learnt that language yet, at the moment I know German, English, Spanish, Italian and French, which language did you want?"
-        else:
+            else:
+                speech_output = "I'm sorry, I'm not sure I have learnt that language yet, at the moment I know German, English, Spanish, Italian and French, which language did you want?"           
+        # if language doesn't match then load default error response
+        except:
+            card_title = "I'm sorry"
             speech_output = "I'm sorry, I'm not sure I have learnt that language yet, at the moment I know German, English, Spanish, Italian and French, which language did you want?"
     else:
         speech_output = "I'm sorry, I'm not sure I have learnt that language yet, at the moment I know German, English, Spanish, Italian and French, which language did you want?"
