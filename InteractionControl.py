@@ -134,11 +134,10 @@ def get_number(intent):
     if 'language' in intent['slots']:
         
         num2words = {1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight', 9: 'nine', 10: 'ten'}
-
+        
         try:
         # extract slot value
             chosen_language = intent['slots']['language']['value']
-            
             if chosen_language != "" :
                 chosen_language = str(intent['slots']['language']['value']).lower()
                 chosen_number = intent['slots']['translationnumber']['value']
