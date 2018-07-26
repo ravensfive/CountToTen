@@ -135,29 +135,26 @@ def get_number(intent):
         
         num2words = {1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eight', 9: 'nine', 10: 'ten'}
 
-
+        try:
         # extract slot value
         chosen_language = intent['slots']['language']['value']
-        if chosen_language != "" :
-            chosen_language = str(intent['slots']['language']['value']).lower()
-            chosen_number = intent['slots']['translationnumber']['value']
+            if chosen_language != "" :
+                chosen_language = str(intent['slots']['language']['value']).lower()
+                chosen_number = intent['slots']['translationnumber']['value']
 
-            #chosen_number = num2words[int(chosen_number)]
-
-            try:
-
+                #chosen_number = num2words[int(chosen_number)]
                 phonetic = languagedata['languages'][0][chosen_language][0][chosen_number][0]['phonetic']
                 value = languagedata['languages'][0][chosen_language][0][chosen_number][0]['value']
             
                 # set card title - appears on the show and spot
                 card_title = chosen_number + ' in ' + chosen_language.title()
                 speech_output = chosen_number + ' in ' + chosen_language.title() + ' is ' + generatebreakstring(500,"ms") + '<phoneme alphabet="ipa" ph="' + phonetic + '">' + value + '</phoneme>' + ", would you like to know anymore?"
-            
-            # if language doesn't match then load default error response
-            except:
+            else:
                 speech_output = "I'm sorry, I can't find that number, at the moment I know how to count to 10 in German, English, Spanish, Italian and French, which language did you want?"
-        else:
-            speech_output = "I'm sorry, I can't find that number, at the moment I know how to count to 10 in German, English, Spanish, Italian and French, which language did you want?"
+            # if language doesn't match then load default error response
+        except:
+                speech_output = "I'm sorry, I can't find that number, at the moment I know how to count to 10 in German, English, Spanish, Italian and French, which language did you want?"
+        
     else:
         speech_output = "I'm sorry, I can't find that number, at the moment I know how to count to 10 in German, English, Spanish, Italian and French, which language did you want?"
 
