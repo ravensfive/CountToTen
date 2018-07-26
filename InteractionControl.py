@@ -137,7 +137,8 @@ def get_number(intent):
 
         try:
         # extract slot value
-        chosen_language = intent['slots']['language']['value']
+            chosen_language = intent['slots']['language']['value']
+            
             if chosen_language != "" :
                 chosen_language = str(intent['slots']['language']['value']).lower()
                 chosen_number = intent['slots']['translationnumber']['value']
